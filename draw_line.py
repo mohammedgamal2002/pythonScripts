@@ -32,7 +32,7 @@ def drawLineSegment(x1, y1 , x2, y2, color):
         return
 
     #slope ==> m
-    m = (max_y - min_y) / (max_x - min_x)
+    m = (y2 - y1) / (x2 - x1)
     c = y1 - (m * x1)
 
     glBegin(GL_POINTS)
